@@ -8,11 +8,9 @@
 <h1>This is my blog</h1>
 {% for post in posts %}
     <div>
-
-        </b><h2><{{ post.title }}</h2></b>
-        <b><p>published: {{ post.published_date }}</p></b>
+        <b><h2><{{ post.title }}</h2></b>
         <p>{{ post.text|linebreaksbr }}</p>
-
+        <p>published: {{ post.published_date }}</p>
     </div>
 
 {% endfor %}
