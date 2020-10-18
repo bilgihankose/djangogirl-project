@@ -7,11 +7,9 @@
 <body>
 <h1 style="color:blue;text-align:center;">This is my blog</h1>
 {% for post in posts %}
-    <div>
-        <b><h1 style="color:red;"><{{ post.title }}</h1></b>
-        <h3>{{ post.text|linebreaksbr }}</h3>
-        <h6>published: {{ post.published_date }}<h6>
-    </div>
+    <h1 style="color:#ff0000;">{{ post.title }}</h1>
+    <h3>{{ post.text|linebreaksbr }}</h3>
+    <h6>published: {{ post.published_date }}<h6>
 
 {% endfor %}
 
